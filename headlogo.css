@@ -282,10 +282,11 @@ a {
 }
 
 .sestim-donials {
-  max-width: 1200px;
+  max-width: 2000px;
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
+  
 }
 
 .sectionesag {
@@ -310,12 +311,12 @@ a {
 
 .testimonial {
   background: #f9f4f4;
-  padding: 28px;
+  padding: 100px;
 }
 
 .testimonial img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
