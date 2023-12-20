@@ -13,13 +13,39 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
-      <script src="script.js"></script>
+      <script src="main.js"></script>
     <title>Phodio-студия видео и фото</title>
 </head>
 <body>
    <!--Header  -->
     <div class="header_wrap">
     <div class="header">  
+      <div class="vhod">
+        <form>
+          <script type="text/javascript">
+function Input(){
+login_ok = false;
+user_name = "";
+password = "";
+user_name = prompt("Логин","");
+user_name = user_name.toLowerCase();
+password = prompt("Пароль","");
+password = password.toLowerCase();
+if (user_name=="1111" && password=="1111") {
+ login_ok = true;
+ window.location = "https://dzen.ru/?yredirect=true&clid=2270456&win=588";
+}
+if (user_name=="login2" && password=="pass2") {
+ login_ok = true;
+ window.location = "forum/index.php";
+}
+
+if (login_ok==false) alert("Неверный логин или пароль!");
+}
+</script>
+          <input type="button" value="Войти на сайт" onClick="Input()">
+        </form>
+      </div>
       <div class="container">
         <nav>  
           <div class="header_nav">
@@ -31,6 +57,7 @@
           </div>
         </nav>  
       </div>
+      
   <!-- Intro -->
       <div class="intro">
         <div class="container">
@@ -45,10 +72,7 @@
             </div>
             <div class="intro_right">
               <div class="intro_block">
-              <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script><iframe style=".blast:hover {
-    color:#08fdd8;
-    font-size: 30px;
-}"
+              <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script><iframe 
                 src="https://forms.yandex.ru/u/65817d49d0468803135370e6/?iframe=1" frameborder="0"
                 name="ya-form-65817d49d0468803135370e6" width="650">
                 </iframe>
@@ -151,8 +175,8 @@
           <div class="sagestim-lonials">
             <div class="vemotau-vokusipol">
               <div class="testimonial">
-                <img src="http://zornet.ru/_fr/83/7890600.jpg" alt="">
-                <div class="gecedanam">Антон Попов</div>
+                <img src="violetta.png" alt="">
+                <div class="gecedanam">Виолетта Павлюк</div>
                 <div class="rating-result">
                 <span class="active"></span>
                 <span class="active"></span>
@@ -161,14 +185,15 @@
                 <span class="active"></span>
                 </div>
       
-                <p>Здесь первое описание. Продолжение.</p>
+                <p>Я хотела бы выразить свою полную благодарность видеостудии за их профессионализм и талант в создании видеороликов. Я
+                заказывала у них видео промо для моего бизнеса и осталась впечатлена качеством и креативностью их работы.</p>
               </div>
             </div>
       
             <div class="vemotau-vokusipol">
               <div class="testimonial">
-                <img src="http://zornet.ru/_fr/83/2047084.jpg" alt="">
-                <div class="gecedanam">Дмитрий Атрохов</div>
+                <img src="sergey.jpg" alt="">
+                <div class="gecedanam">Сергей Воркутов</div>
               <div class="rating-result">
                 <span class="active"></span>
                 <span class="active"></span>
@@ -177,14 +202,16 @@
                 <span class="active"></span>
               </div>
       
-                <p>Второй отзыв. Его продолжение.</p>
+                <p>Качество фотографий - просто потрясающее! Каждое изображение излучает настоящую эмоцию и передает особенности съемки.
+                Интересная игра света и тени, стильная обработка и оригинальные ракурсы делают все фотографии по-настоящему
+                профессиональными.</p>
               </div>
             </div>
       
             <div class="vemotau-vokusipol">
               <div class="testimonial">
-                <img src="http://zornet.ru/_fr/83/5640570.jpg" alt="">
-                <div class="gecedanam">Каспер Волков</div>
+                <img src="inga.png" alt="">
+                <div class="gecedanam">Инга Самойлова</div>
               <div class="rating-result">
                 <span class="active"></span>
                 <span class="active"></span>
@@ -193,11 +220,33 @@
                 <span class="active"></span>
               </div>
       
-                <p>Третье описание. На отзыв.
-                </p>
+                <p>Не смотря на множество фотостудий в городе, я смогла найти настоящую жемчужину - фотостудию, которая превзошла все мои
+                ожидания! Я была приятно удивлена сервисом и профессионализмом персонала. С самого начала до конца работы, мне было
+                оказано индивидуальное внимание и учтены все мои пожелания.</p>
               </div>
             </div>
           </div>
+<div class="container-2">
+  <script>var carousel = document.getElementById("carousel");
+    currdeg = 0;
+    document.getElementById("next").onclick = function rotate(e) {
+      currdeg = currdegv - 60;
+      carousel.style.transform = "rotateY(" + currdeg + "deg)";
+    };
+    document.getElementById("prev").onclick = function rotate(e) {
+      currdeg = currdeg + 60;
+      carousel.style.transform = "rotateY(" + currdeg + "deg)";
+    };</script>
+  <div id="carousel"></div>
+  <div class="item a"></div>
+  <div class="item b"></div>
+  <div class="item c"></div>
+  <div class="item d"></div>
+  <div class="item e"></div>
+  <div class="item f"></div>
+</div>
+<div id="next">Next</div>
+<div id="Prev"></div>
 
 </body>
 </html>
