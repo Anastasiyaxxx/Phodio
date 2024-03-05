@@ -66,9 +66,9 @@ a {
   width: 230px;
   text-align: center;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
   transition: 0.2s;
-  padding: 30px 0px 10px 70px;
+  padding: 30px 0px 12px 70px;
 }
 
 .btn:hover{
@@ -78,12 +78,13 @@ a {
 
 .icon_buttons{
   display: flex;
-  padding: 40px
+  padding: 20px;
 }
 
 .header{
-  background: linear-gradient(100deg,#bcbdbd,#e6e6e6);
+ background: linear-gradient(90deg, #b8b8b8,#c4c4c4,#bfbbbb,#b0b0b0,#cfcfcf);
 }
+
 
 .header_nav{
   display: flex;
@@ -122,9 +123,12 @@ a {
     overflow: hidden;
     width: 400px;
     height: 400px;
-    margin-bottom: 100px;
-    cursor: pointer;
+    margin-bottom: 100px; 
     border-radius: 20px;
+}
+
+.prt_block:hover .prt_content{
+  opacity: 1;
 }
 
 .prt_img{
@@ -137,7 +141,6 @@ a {
 }
 
 .prt_content{
-    padding: 0px 36px 60px 36px;
     position: absolute;
     top: 0;
     left: 0;
@@ -146,11 +149,15 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     transition: opacity .2s linear;
     background-color: rgba(32, 32, 32, 0.925);
     border-radius: 5px;
+}
+
+.prt_text{
+  font-size: 32px;
+  text-transform: capitalize;
 }
