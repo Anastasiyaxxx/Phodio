@@ -15,31 +15,66 @@
       <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet"  href="./TextQuestion.scss">
       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
     <title>Phodio-студия видео и фото</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+<script src="//code.jivo.ru/widget/cD43mRdk3U" async></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const burgerCheckbox = document.querySelector('.burger-checkbox');
+  const nav = document.querySelector('.nav');
+  const body = document.querySelector('html', 'body');
+
+  burgerCheckbox.addEventListener('change', function() {
+    if (this.checked) {
+      // Блокировка скролла при появлении бургер меню
+      body.style.overflow = 'hidden';
+      html.style.overflow = 'hidden';
+    } else {
+      // Возвращение скролла при закрытии бургер меню
+      body.style.overflow = 'auto';
+    }
+  });
+});
+</script>
 <body>
+
    <!--Header  -->
+   <div class="container">
       <div class="header">  
-        <div class="container">
-          <nav>  
-            <div class="header_nav">
-              <a href="index.html"><img src="Phodio.svg" ></a>
-              <a href="index.html" class="btn">Главная</a>
-              <a href="portpholio.html" class="btn">Портфолио</a>
-              <a href="#" class="btn">PRICE</a>
-              
-              <a href="#" class="btn">Команда</a>
-              <a href="#" class="btn">Контакты</a>
-              
-                  <div class="icon_buttons">
-                    <a href="" class="icon_btn"><img src="./free-icon-telegram-15079316.png" alt="" width="40px"></a>
-                    <a href="" class="icon_btn"><img src="./free-icon-vk-social-network-logo-25684.png" alt="" width="40px"></a>
-                    <a href="" class="icon_btn"><img src="./free-icon-youtube-152810.png" alt="" width="40px"></a>
-                  </div>
+        
+                <!-- Logo -->
+                    <a href="./index.html"><img src="Phodio.svg" class="logotype"></a>
+        <!-- Hamburger icon -->
+<div class="menu">
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+    <label for="burger-checkbox" class="burger"></label>
+    <ul class="menu-list">
+        <li><a href="./index.html" class="menu-item">Главная</a></li>
+        <li><a href="./portpholio.html" class="menu-item">Портфолио</a></li>
+        <li><a href="#" class="menu-item">PRICE</a></li>
+        <li><a href="#" class="menu-item">Команда</a></li>
+        <li><a href="#" class="menu-item">Контакты</a></li>
+    </ul>
+</div>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./portpholio.html">Портфолио</a> </li>
+                <li><a href="./price.html">PRICE</a></li>
+                <li><a href="command.html">Команда</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="" class="icon_btn"><img src="./free-icon-telegram-15079316.png" alt="" width="40px"></a></li>
+                    <li><a href="" class="icon_btn"><img src="./free-icon-vk-social-network-logo-25684.png" alt="" width="40px"></a></li>
+                  </ul>
+        </nav>
+  
             </div>
-          </nav>  
-        </div>
+            
+        </div></div>
       </div>  
       <!-- Intro -->
       <div class="intro">
@@ -53,15 +88,22 @@
                 Это место творчества и креатива, где свет, цвет и композиция сочетаются для запечатления моментов.
               </p>
             </div>
-            <div class="intro_right">
-              <div class="intro_block">
-              <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script><iframe 
-                src="https://forms.yandex.ru/u/65817d49d0468803135370e6/?iframe=1" frameborder="0"
-                name="ya-form-65817d49d0468803135370e6" width="650">
-                </iframe>
-
-               
+            <div   class="intro_right">
+              <div class="intro_button">
+                <div class="box-1">
+                   <a href="#win1" class="btnz btn-one"><span class="zaver ">Записаться</span></a>
+                  <a href="#x" class="overlay" id="win1"></a>
+                  <div class="popup">
+                <script src="https://forms.yandex.ru/_static/embed.js"></script>
+                  <iframe src="https://forms.yandex.ru/u/65817d49d0468803135370e6/?iframe=1" frameborder="0" name="ya-form-65817d49d0468803135370e6" width="650"></iframe>
+                <a class="close"title="Закрыть" href="#close"></a>
+    </div></div>
+                  </a>
+                </div>
               </div>
+
+
+              
             </div>
           </div>
         </div>
@@ -173,112 +215,104 @@
         </div>
       </div>
     </div>
+    <div class="otz_yv">
+      <div class="works_content1">
+          <h1 class="works_title1">Отзывы клиентов</h1>
+        </div>
+    <div class="testimonial-grid">
+ 
+<!-- Testimonial container... -->
+<!-- The `<div class="testimonial-container">` is a container element that holds 
+a testimonial. It includes two child elements: `<div class="testimonial-avatar">` 
+and `<div class="testimonial-text">`. -->
+        <div class="testimonial-container">
+            <div class="testimonial-avatar">
+                <img src="otzyv1.jpg"
+                    alt="User Avatar">
+            </div>
+            <div class="testimonial-text">
+                <p class="testimonial-name">Виктория Лопырева</p>
+                <p class="testimonial-role">Marketing Manager, Axme Inc.</p>
+<p class="otzov-4">"Я хотел бы поделиться своим восторгом от работы с фото-видео студией. Это был мой первый опыт профессиональной фотосъемки, и я не мог быть более доволен результатом. Фотографы студии проявили высочайший профессионализм и креативность на протяжении всей съемки. "</p>
+            </div>
+        </div>
+        <!-- Testimonial containers... -->
+        <div class="testimonial-container">
+            <div class="testimonial-avatar">
+                <img src="otzyv2.jpg"
+                    alt="User Avatar">
+            </div>
+            <div class="testimonial-text">
+                <p class="testimonial-name">Галина Васильева</p>
+                <p class="testimonial-role">CEO at XYZ</p>
+                <p class="otzov-4">"Мы использовали услуги фото-видео студии для проведения свадебной фотосъемки, и нам невероятно повезло, что выбрали именно эту студию. От начала до конца процесса, всё было абсолютно безупречно. Команда студии была предельно внимательна к деталям, они проявили огромный профессионализм и страсть к своей работе."</p>
+            </div>
+        </div>
+        <!-- Testimonial containers... -->
+        <div class="testimonial-container">
+            <div class="testimonial-avatar">
+                <img src="otzyv3.jpg"
+                    alt="User Avatar">
+            </div>
+            <div class="testimonial-text">
+                <p class="testimonial-name">Ирина Смирнова</p>
+                <p class="testimonial-role">CEO at ABC Company</p>
+<p class="otzov-4">"Я долго мечтала о профессиональной фотосессии и, выбрав фото-видео студию, я получила все и даже больше, чем ожидала. Профессиональные фотографы создали волшебные кадры, они внимательно выслушали мои пожелания и предложили множество интересных идей. Атмосфера в студии была очаровательной, что помогло мне чувствовать себя расслабленной и комфортно во время съемки."</p>
+            </div>
+        </div>
+        <!-- Testimonial containers... -->
+        <div class="testimonial-container">
+            <div class="testimonial-avatar">
+                <img src="otzyv4.jpg"
+                    alt="User Avatar">
+            </div>
+            <div class="testimonial-text">
+                <p class="testimonial-name">Павел Лукьянов</p>
+                <p class="testimonial-role">CEO at ABC Company</p>
+<p class="otzov-4">"Моя семья и я заказали фотосъемку в фото-видео студии для проведения семейного праздника, и мы остались под впечатлением от качества услуг. Фотографы вели себя очень профессионально, они провели съемку с большим терпением и вниманием к деталям. Они смогли запечатлеть самые невероятные моменты и создать потрясающие портреты. Обстановка в студии была уютной и дружелюбной."</p>
+            </div>
+        </div>
     
-    <div class="reviews">
-      <div class="container">
-        <div class="koguvcavis-varazdel">
-          <div class="sestim-donials">
-            <h1 class="reviews_title">Отзывы</h1>
-            <div class="sectionesag"></div>
-            <div class="sagestim-lonials">
-              <div class="vemotau-vokusipol">
-                <div class="testimonial">
-                  <img src="violetta.png" alt="">
-                  <div class="gecedanam">Виолетта Павлюк</div>
-                  <div class="rating-result">
-                  <span class="active"></span>
-                  <span class="active"></span>
-                  <span class="active"></span>
-                  <span class="active"></span>
-                  <span class="active"></span>
-                  </div>
-        
-                  <p>Я хотела бы выразить свою полную благодарность видеостудии за их профессионализм и талант в создании видеороликов. Я
-                  заказывала у них видео промо для моего бизнеса и осталась впечатлена качеством и креативностью их работы.</p>
-                </div>
-              </div>
-        
-              <div class="vemotau-vokusipol">
-                <div class="testimonial">
-                  <img src="sergey.jpg" alt="">
-                  <div class="gecedanam">Сергей Воркутов</div>
-                <div class="rating-result">
-                  <span class="active"></span>
-                  <span class="active"></span>
-                  <span class="active"></span>
-                  <span class="active"></span>
-                  <span class="active"></span>
-                </div>
-        
-                  <p>Качество фотографий - просто потрясающее! Каждое изображение излучает настоящую эмоцию и передает особенности съемки.
-                  Интересная игра света и тени, стильная обработка и оригинальные ракурсы делают все фотографии по-настоящему
-                  профессиональными.</p>
-                </div>
-              </div>
-        
-              <div class="vemotau-vokusipol">
-                <div class="testimonial">
-                  <img src="inga.png" alt="">
-                  <div class="gecedanam">Инга Самойлова</div>
-                <div class="rating-result">
-                  <span class="active"></span>
-                  <span class="active"></span>
-                  <span class="active"></span>
-                  <span class="active"></span>
-                  <span class="active"></span>
-                </div>
-        
-                  <p>Не смотря на множество фотостудий в городе, я смогла найти настоящую жемчужину - фотостудию, которая превзошла все мои
-                  ожидания! Я была приятно удивлена сервисом и профессионализмом персонала. С самого начала до конца работы, мне было
-                  оказано индивидуальное внимание и учтены все мои пожелания.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="contact">
-      <div class="container">
-        <div class="works_content">
-          <h1 class="cont_title">Свяжитесь с нами</h1>
-        </div>
-        <img src="./1674468150_foni-club-p-art-pleis-fotostudiya-15.jpg" alt="" class="maps_img1">
-        <img src="./8def3516f77677cbb206b6aabccf4cf8.jpg" alt="" class="maps_img2">
-        <div class="cont_maps">
-          <div class="maps_content">
-            <div class="map_element">
-              <img src="free-icon-call-5941094.png" alt="" width="30px" height="30px">
-              <p class="maps_text">8(928)282-82-82</p>
-            </div>
-            <div class="map_element">
-              <img src="img/email-address-sign-at-inbox-svgrepo-com (1).png" alt="" width="30px" height="30px">
-              <p class="maps_text">INFO@PHODIO.COM</p>
-            </div>
-            <div class="map_element">
-              <div class="mestonah" id="last_text">
-              <p class="maps_text" id="mestonah">МЕСТО НАХОЖДЕНИЯ</p>
-              </div>
-            </div>
-            <div class="map_element">
-              <img src="free-icon-location-5941264.png" alt="" width="30px" height="30px">
-              <p class="maps_text">Г. Реутов, ул. Юбилейный проспект 57</p>
-            </div>
-            <div class="map_element" >
-            <div class="txt_vizitka">
-              <p class="maps_text" id="visitka">Мы будем рады видеть вас в нашей видеостудии и помочь воплотить в жизнь любые ваши идеи и проекты. Доверьте нам свои идеи, и мы сделаем все возможное, чтобы они стали реальностью на экране.</p>
-            </div> 
-          </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
+ </div>
+
+<div class="line-btnn "><div class="prd"><span class="otod bx2 line-btn-two">Оставить отзыв</span></div> 
+
+</div></div>
+
 
 </body>
 
 <footer>
   <div class="container">
+    <div class="plu">
+<div class="card">
+<div class="card-2"> 
+   <p class="p1">Адрес</p>
+<p class="p5">149563, Московская область, г.Реутов, ул. Юбилейный проспект, 47 (вход 2б)</p>
+<br>
+<p class="p1">Электронная почта</p>
+<p class="p8">anastasiaphoto@mash.ru</p>
+<br>
+<p class="p1">Телефон</p>
+<p class="p8">8(800) 555-35-35</p>
+<br>
+<p class="p1">Часы работы</p>
+<p class="p5">Пн-Вс с 8.00 до 22.00</p>
+<br>
+<p class="p1">Мы в соцсетях</p>
+<ul class="social-icons">
+  <li><a class="social-icon-vk" href="#" title="..." target="_blank" rel="noopener"></a></li>
+  <li><a class="social-icon-telegram" href="#" title="..." target="_blank" rel="noopener"></a></li>
+  <li><a class="social-icon-youtube" href="#" title="..." target="_blank" rel="noopener"></a></li>
+</ul>
+</div>
+<div class="card-1">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A78a777193308f2f01beeccc784756fafac04179c325c84d48a0b5ac3176bf0b9&amp;width=591&amp;height=447&amp;lang=ru_RU&amp;scroll=true"></script>
+
+
+
+</div></div>
+    </div></div>
     <div class="footer_inner">
       <p class="footer_text">
         Copyright @ 2024. Все права защищены.
