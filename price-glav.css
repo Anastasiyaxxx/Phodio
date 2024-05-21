@@ -1,0 +1,279 @@
+
+.gallery_button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 2px solid #ffff;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #fff;
+    font-size: 23px;
+    transition: 0.3s;
+    border-radius: 7px;
+}
+.gallery_title{
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 300px;
+    color: #ffff;
+    padding: 10px;
+    border-bottom: 3px solid #ffff;
+}
+.price-glav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.price-glav:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.h12{
+    width: 450px;
+    height: 450px;
+    border-radius: 15px;
+}
+.color-price{
+    color: #9974b9;
+    font-weight:600;
+    font-size: 30px;
+}
+.p1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.p2{
+    color: #000000;
+    font-weight:600;
+    font-size: 25px;
+}
+.g44{
+    display: flex;
+}
+.button2{
+    display: flex;
+    justify-content: flex-end;
+    padding: inherit;
+}
+.price-txt-title{
+    background-color: #efefef;
+    padding: 20px;
+    width: 800px;
+    height: 450px;
+    border-radius: 13px;
+}
+.txt_opisanie{
+    font-size: 20px;
+}
+.c1{
+background-color: rgb(0, 0, 0);
+color: #fff;
+height:70px ;
+border-radius: 10px;
+font-size: 20px;
+}
+   .c1 {
+  
+    background-color: #c7a6da; /* Цвет фона */
+    color: #fff; /* Белый цвет текста */
+    border: none; /* Убираем рамку */
+    font-size: 1em; /* Размер шрифта */
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3); /* Тень у надписи */
+    margin-right: 1rem; /* Расстояние справа */
+    transition: background-color 0.1s; box-shadow: 0.2s 0.3s; /* Время перехода */
+    
+   }
+   .c1:hover {
+    background-color: #6e537b; /* Цвет фона */
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #8950df; /* Тень в виде рамки */
+   }
+.p3{
+    color: #5679ff;
+    font-size: 24px;
+}
+.p4{
+    color: #000000;
+    font-weight: 50;
+    font-size: 19px;
+}
+.p4::before {
+  content: '\2713'; /* символ галочки */
+  color: rgb(85, 35, 118); /* цвет галочки */
+  margin-right: 5px; /* отступ от текста */
+  font-size: 24px; /* размер галочки */
+}
+.slider-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 10px 10px;
+    overflow-x: scroll;
+    cursor: pointer;
+    user-select: none;
+    scrollbar-width: none;
+    margin-bottom: 65px;
+    /* margin-top: 102px; */
+}
+.slider-items::-webkit-scrollbar {
+    display: none;
+}
+.slider-item {
+    width: 220px;
+    min-width: 500px;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 10px 10px 10px;
+    overflow: hidden;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-item:first-child {
+    background-image: url('/files/img/article/css_gorizontalnaya_prokrutka/slide1.png');
+    background-size: contain;
+}
+.slider-item:nth-child(1) {
+    background-color: #a4aec2;
+    border-radius: 15px;
+}
+.slider-item:nth-child(2) {
+    background-color: #cdd6ef;
+    border-radius: 15px;
+}
+.slider-item:nth-child(3) {
+    background-color: #c0c5d3;
+    border-radius: 15px;
+}
+.slider-item:nth-child(4) {
+    background-color: #a4aec2;
+    border-radius: 15px;
+}
+.slider-item:nth-child(5) {
+    background-color: #c0c5d3;
+    border-radius: 15px;
+}
+.slider-item:nth-child(6) {
+    background-color: #cdd6ef;
+    border-radius: 15px;
+}
+.slider-item:nth-child(7) {
+   background-color: #a4aec2;
+   border-radius: 15px;
+}
+.slider-item:nth-child(8) {
+    background-color: #cdd6ef;
+    border-radius: 15px;
+}
+.slider-item:nth-child(9) {
+    background-color: #c0c5d3;
+    border-radius: 15px;
+}
+.phon1{
+max-width: 460px;
+max-height: 390px;
+display: flex;
+border-radius: 15px;
+}
+.opisanie-price{
+    display: flex;
+}
+.gorlin{
+width: 400px;
+height: 1px;
+background-color: #000000;
+}
+
+.custom-btn {
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgb(198, 176, 219),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-4 {
+  background-color: rgb(172 163 194);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-4:hover{
+  background-color: rgb(172 163 194);
+  background-image: linear-gradient(315deg, rgb(141, 129, 168) 0%, rgb(161, 146, 200) 74%);
+}
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  height: 0%;
+  width: .1px;
+}
+.btn-4:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-4:hover:before {
+  height: 100%;
+}
+.btn-4:hover:after {
+  width: 100%;
+}
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-4 span:before {
+  width: .1px;
+  height: 0%;
+}
+.btn-4 span:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-4 span:hover:before {
+  height: 100%;
+}
+.btn-4 span:hover:after {
+  width: 100%;
+}
+.button-niz{
+    font-size: 25px;
+}
