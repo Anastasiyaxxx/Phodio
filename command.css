@@ -1,0 +1,82 @@
+.all-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-block:nth-child(even) {
+  flex-direction: row-reverse;
+  display: flex;
+}
+.option-block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    max-width: 1400px;
+}
+.rezum-sotrudnik{
+display: flex;
+flex-direction: column;
+background-color: #ffffff6b;
+width: 800px;
+padding: 40px;
+border-radius: 20px;
+height: 450px;
+}
+.im{
+width: 500px;
+height: 450px;
+display: flex;
+border-radius: 15px;
+}
+.com-name{
+color: #8f97b2;
+font-size: 34px;
+padding-bottom: 30px;
+}
+.com-det{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.bzh{
+  font-weight: 600;
+  font-size: 22px;
+  
+}
+.rating-result1 {
+	width: 265px;
+	margin-left: 370px;
+  display: flex;
+  align-items: center;
+}
+.rating-result1 span {
+	padding: 0;
+	font-size: 45px;
+	margin: 0 3px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-result1 > span:before {
+	content: '★';
+}
+.rating-result1 > span.activ {
+	color: gold;
+}
+.reiting{
+  font-size: 28px;
+  font-weight: 600;
+  color: #8f97b2;
+}
+.icon-command{
+  display: flex;
+}
+/* .liner{
+text-decoration-skip-ink: none;
+text-decoration: underline;
+} */
+.icp{
+margin: 10px;
+}
