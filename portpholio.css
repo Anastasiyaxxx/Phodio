@@ -1,90 +1,6 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-}
-
-.logo{
-    /* Phodio */
-
-    /* width: 501px;
-    height: 159px; */
-    
-    font-family: 'Love Ya Like A Sister';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 100px;
-    line-height: 159px;
-    
-    color: #ffffff;
-    
-
-}
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Lato);
-
-/* *, *:before, *:after{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-} */
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
 }
-
-.container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0px auto;
-  padding: 0 15px;
-  
-}
-
-a {
-  font-size: 16px;
-  padding: 10px 25px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.btn {
-  text-decoration: none;
-  width: 230px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  transition: 0.2s;
-  padding: 30px 0px 12px 70px;
-}
-
-.btn:hover{
-  transition: 0.2s;
-  color: #979797;
-}
-
-.icon_buttons{
-  display: flex;
-  padding: 20px;
-}
-
-.header{
- background: linear-gradient(90deg, #b8b8b8,#c4c4c4,#bfbbbb,#b0b0b0,#cfcfcf);
-}
-
 
 .header_nav{
   display: flex;
@@ -115,7 +31,7 @@ a {
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 150px;
+    /* margin-top: 112px; */
 }
 
 .prt_block{
@@ -124,7 +40,7 @@ a {
     width: 400px;
     height: 400px;
     margin-bottom: 100px; 
-    border-radius: 20px;
+    border-radius: 150px;
 }
 
 .prt_block:hover .prt_content{
@@ -158,6 +74,30 @@ a {
 }
 
 .prt_text{
+  padding: 30px 60px;
   font-size: 32px;
   text-transform: capitalize;
+}
+
+.work{
+  background-color: #e0e0e0;
+}
+.gallery_button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 2px solid #ffff;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #fff;
+    font-size: 23px;
+    transition: 0.3s;
+    border-radius: 7px;
+  }
+  .gallery_title{
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 300px;
+    color: #ffff;
+    padding: 10px;
+    border-bottom: 3px solid #ffff;
 }
