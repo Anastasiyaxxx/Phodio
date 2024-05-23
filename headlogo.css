@@ -446,6 +446,7 @@ div[class*=box] {
   text-align: center;
   padding: 25px;
   border-bottom: 3px solid #ffff;
+  font-size: 50px;
 
 }
 
@@ -535,68 +536,7 @@ span {
   display: flex;
   justify-content: center;
 }
-.cont_maps{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.maps_content{
-padding: 200px 250px;
-background-color: #fff;
-border-radius: 50%;
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-bottom: 50px;
 
-}
-.maps_text{
-  display:flex ;
-  align-items: center;
-  margin-left: 10px;
-}
-.map_element{
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-.mestonah{
-  color: #799acc;
-  font-size: 50px;
-}
-#mestonah{
-  margin: 0;
-}
-#last_text{
-  padding-bottom: 30px;
-  border-bottom: 6px solid #799acc;
-}
-.txt_vizitka{
-
-  text-align: center;
-  display: flex;
-}
-#visitka{
-  font-family: "Caveat", cursive;
-  font-size: 32px;
-  width: 520px;
-  margin: 0;
-}
-.maps_img1{
-  position: absolute;
-  display: flex;
-  width: 320px;
-  margin-left: 100px;
-  border-radius: 50%;
-}
-.maps_img2{
-  position: absolute;
-  display: flex;
-  width: 320px;
-  margin-left: 1000px;
-  margin-top: 600px;
-  border-radius: 50%;
-}
 
 
 body {
@@ -672,7 +612,7 @@ testimonial in a testimonial grid. */
   text-align: center;
   padding: 25px;
   border-bottom: 3px solid #ffffff;
-  margin: 25px 0px 70px;
+  margin: 25px 0px 60px;
 }
 .btnz{
   width: 350px;
@@ -1137,7 +1077,7 @@ ul{
   position: absolute;
   display: grid;
   gap: 0px;
-  padding: 42px 0;
+  padding:0;
   list-style-type: none;
   transform: translateX(-100%);
   transition: .3s;
@@ -1191,9 +1131,11 @@ ul{
 
     }
 
+
     .hamb{
         display: none;
     }
+
 }
 /* Responsiveness */
 
@@ -1569,6 +1511,7 @@ div[class*=box] {
 .advantages_blocks{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .ad_block_img_border{
   padding: 20px;
@@ -1783,6 +1726,8 @@ div[class*=box] {
   text-align: center;
   padding: 25px;
   border-bottom: 3px solid #ffff;
+  margin: 0;
+  font-size: 40px;
 
 }
 
@@ -1872,68 +1817,8 @@ span {
   display: flex;
   justify-content: center;
 }
-.cont_maps{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.maps_content{
-padding: 200px 250px;
-background-color: #fff;
-border-radius: 50%;
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-bottom: 50px;
 
-}
-.maps_text{
-  display:flex ;
-  align-items: center;
-  margin-left: 10px;
-}
-.map_element{
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-.mestonah{
-  color: #799acc;
-  font-size: 50px;
-}
-#mestonah{
-  margin: 0;
-}
-#last_text{
-  padding-bottom: 30px;
-  border-bottom: 6px solid #799acc;
-}
-.txt_vizitka{
 
-  text-align: center;
-  display: flex;
-}
-#visitka{
-  font-family: "Caveat", cursive;
-  font-size: 32px;
-  width: 520px;
-  margin: 0;
-}
-.maps_img1{
-  position: absolute;
-  display: flex;
-  width: 320px;
-  margin-left: 100px;
-  border-radius: 50%;
-}
-.maps_img2{
-  position: absolute;
-  display: flex;
-  width: 320px;
-  margin-left: 1000px;
-  margin-top: 600px;
-  border-radius: 50%;
-}
 
 
 body {
@@ -1948,7 +1833,7 @@ h1 {
 /* This class is defining the styling for a grid container. */
 .testimonial-grid {
     display: grid;
-    align-items: center;
+  justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 60px;
     max-width: 1400px;
@@ -2009,7 +1894,8 @@ testimonial in a testimonial grid. */
   text-align: center;
   padding: 25px;
   border-bottom: 3px solid #ffffff;
-  margin: 25px 0px 70px;
+  margin: 25px 0px 60px;
+  font-size: 30px;
 }
 .btnz{
   width: 350px;
@@ -2202,9 +2088,9 @@ footer{
 .card-2{
   display: flex;
   flex-direction: column;
-    width: 500px;
+    width: 344px;
   height: 400px;
-  margin-left: 120px;
+  margin-left: 0px;
 }
 .card-1{
   display: none;
@@ -2358,7 +2244,12 @@ display: flex;
   font-size: 28px;
 }
 .menu a{
-  padding: 60px;
+  padding: 80px;
+  background: #a79bcb;
+  height: 180px;
+  width: 320px;
+  border: 1px solid #fff;
+}
 }
 .about_inner{
   padding: 40px 0px;
@@ -2369,4 +2260,4 @@ display: flex;
 .about_content{
   font-size: 17px;
 }
-}
+

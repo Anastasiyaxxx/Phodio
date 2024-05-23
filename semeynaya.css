@@ -18,6 +18,8 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
+    margin-top: 60px;
+    padding-bottom: 60px;
 }
 .gallery__img {
     width: 100%;
@@ -70,4 +72,17 @@
     color: #ffff;
     padding: 10px;
     border-bottom: 3px solid #ffff;
+}
+@media only screen and (max-width: 768px) {
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+}
+.gallery-bgrnd{
+    background-color:#e0e0e0;;
 }

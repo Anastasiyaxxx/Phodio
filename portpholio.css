@@ -24,14 +24,13 @@ body {
     width: 100%;
     max-width: 1400px;
     margin: 0px auto;
-    padding: 0 15px;
 }
 .svyaz_prt{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    /* margin-top: 112px; */
+    margin-top: 60px;
 }
 
 .prt_block{
@@ -93,11 +92,23 @@ body {
     transition: 0.3s;
     border-radius: 7px;
   }
-  .gallery_title{
+  /* .gallery_title{
     text-align: center;
     font-size: 50px;
-    margin: 40px 300px;
     color: #ffff;
     padding: 10px;
     border-bottom: 3px solid #ffff;
+} */
+@media only screen and (max-width: 768px) {
+  .gallery_title{
+    text-align: center;
+    font-size: 50px;
+    color: #ffff;
+    padding: 10px;
+    border-bottom: 3px solid #ffff;
+}
+
+}
+.gallery-bgrnd{
+    background-color:#e0e0e0;;
 }

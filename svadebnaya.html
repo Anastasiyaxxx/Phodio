@@ -18,8 +18,27 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
     <title>Phodio-студия видео и фото</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <script src="//code.jivo.ru/widget/cD43mRdk3U" async></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const burgerCheckbox = document.querySelector('.burger-checkbox');
+  const nav = document.querySelector('.nav');
+  const body = document.querySelector('html', 'body');
+
+  burgerCheckbox.addEventListener('change', function() {
+    if (this.checked) {
+      // Блокировка скролла при появлении бургер меню
+      body.style.overflow = 'hidden';
+      html.style.overflow = 'hidden';
+    } else {
+      // Возвращение скролла при закрытии бургер меню
+      body.style.overflow = 'auto';
+    }
+  });
+});
+</script>
 <body>
    <!--Header  -->
    <div class="container">
@@ -34,9 +53,9 @@
     <ul class="menu-list">
         <li><a href="./index.html" class="menu-item">Главная</a><li>
         <li><a href="./portpholio.html" class="menu-item">Портфолио</a><li>
-        <li><a href="#" class="menu-item">PRICE</a><li>
-        <li><a href="#" class="menu-item">Команда</a><li>
-          <li><a href="#" class="menu-item">Контакты</a><li>
+        <li><a href="./price.html" class="menu-item">PRICE</a><li>
+        <li><a href="command.html" class="menu-item">Команда</a><li>
+          <li><a href="contacts.html" class="menu-item">Контакты</a><li>
     </ul>
 </div>
         <!-- Menu -->
@@ -57,14 +76,14 @@
         </div></div>
       </div>  
 
-      <div class="galerry-bgrnd">
+      <div class="gallery-bgrnd">
         <div class="container">
 
           <a href="./portpholio.html"><button href="./portpholio.html" class="gallery_button">Назад</button></a>
 
-          <h1 class="gallery_title">
-            Свадебная съемка
-          </h1>
+     <div class="works_content">
+          <h1 class="works_title">Семейная</h1>
+        </div>
 
           <div class="gallery">
               <figure class="gallery__item gallery__item--1">

@@ -22,6 +22,24 @@
     
 </head>
 <script src="//code.jivo.ru/widget/cD43mRdk3U" async></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const burgerCheckbox = document.querySelector('.burger-checkbox');
+  const nav = document.querySelector('.nav');
+  const body = document.querySelector('html', 'body');
+
+  burgerCheckbox.addEventListener('change', function() {
+    if (this.checked) {
+      // Блокировка скролла при появлении бургер меню
+      body.style.overflow = 'hidden';
+      html.style.overflow = 'hidden';
+    } else {
+      // Возвращение скролла при закрытии бургер меню
+      body.style.overflow = 'auto';
+    }
+  });
+});
+</script>
 <body>
    <!--Header  -->
        <div class="container">
@@ -36,9 +54,9 @@
     <ul class="menu-list">
         <li><a href="./index.html" class="menu-item">Главная</a><li>
         <li><a href="./portpholio.html" class="menu-item">Портфолио</a><li>
-        <li><a href="#" class="menu-item">PRICE</a><li>
-        <li><a href="#" class="menu-item">Команда</a><li>
-          <li><a href="#" class="menu-item">Контакты</a><li>
+        <li><a href="./price.html" class="menu-item">PRICE</a><li>
+        <li><a href="command.html" class="menu-item">Команда</a><li>
+          <li><a href="contacts.html" class="menu-item">Контакты</a><li>
     </ul>
 </div>
         <!-- Menu -->
@@ -59,15 +77,15 @@
         </div></div>
       </div>  
 
-      <div class="galerry-bgrnd">
+      <div class="gallery-bgrnd">
         <div class="container">
 
           <a href="index.html"><button href="index.html" class="gallery_button">Назад</button></a>
 
-    <h1 class="gallery_title">
-    PRICE-ЛИСТ
-    </h1>
-        </div></div>
+     <div class="works_content">
+          <h1 class="works_title">PRICE-ЛИСТ</h1>
+        </div>
+        </div>
 
     <div class="container">
 <div class="slider-items">
@@ -432,7 +450,7 @@ function initCustomSlider() {
 	});
 }
 </script>
-</div>
+</div></div>
 
 </div>
 
