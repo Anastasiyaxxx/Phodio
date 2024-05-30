@@ -2764,11 +2764,11 @@ display: none;
 
 }
 @media only screen and (max-width: 360px) and (min-width: 360px){
-  .menu a {
-    padding: 72px;
+.menu a {
+    padding: 62px;
     background: #6a686e;
     height: 0px;
-    width: 292px;
+    width: 284px;
     border: 1px solid #fff;
 }
 }
@@ -2779,6 +2779,10 @@ display: none;
     width: 100%;
     display: flex;
     justify-content: flex-start;
+}
+.logotype {
+    width: 240px;
+    height: 130px;
 }
 }
 @media only screen and (max-width: 320px) and (min-width: 320px){
