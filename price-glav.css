@@ -188,6 +188,8 @@ height: 1px;
 background-color: #000000;
 }
 
+
+
 .custom-btn {
   width: 200px;
   height: 60px;
@@ -201,9 +203,7 @@ background-color: #000000;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgb(198, 176, 219),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 7px 7px 2px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
 }
 .btn-4 {
@@ -276,6 +276,7 @@ background-color: #000000;
 }
 .button-niz{
     font-size: 25px;
+    display: inline-block;
 }
 @media only screen and (max-width: 768px) {
 .slider-items {
@@ -289,7 +290,36 @@ background-color: #000000;
     user-select: none;
     scrollbar-width: none;
     padding-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 30px;}
+    .slider-item {
+    width: 220px;
+    min-width: 300px;
+    height: 840px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 10px 10px 10px;
+    overflow: hidden;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.phon1{
+max-width: 266px;
+max-height: 390px;
+display: flex;
+border-radius: 15px;
+}
+.p3{
+    color: #5679ff;
+    font-size: 18px;
+}
+.p4{
+    color: #000000;
+    font-weight: 50;
+    font-size: 14px;
+}
+.button-niz{
+    font-size: 15px;
 }
 }
 .gallery-bgrnd{

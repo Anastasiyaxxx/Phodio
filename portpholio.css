@@ -112,3 +112,14 @@ body {
 .gallery-bgrnd{
     background-color:#e0e0e0;;
 }
+@media only screen and (max-width: 860px) and (min-width: 769px){
+.prt_block {
+    position: relative;
+    overflow: hidden;
+    width: 380px;
+    height: 380px;
+    margin-bottom: 100px;
+    border-radius: 150px;
+}
+
+}
