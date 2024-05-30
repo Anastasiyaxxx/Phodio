@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+      <link rel="icon" href="Icon.svg" type="image/x-icon">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
@@ -19,6 +19,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
     <title>Phodio-студия видео и фото</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 <script src="//code.jivo.ru/widget/cD43mRdk3U" async></script>
 <script>
@@ -37,6 +38,35 @@
       body.style.overflow = 'auto';
     }
   });
+});
+</script>
+<script>
+  const slider = document.querySelector('.gallery');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', e => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', _ => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', _ => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', e => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const SCROLL_SPEED = 3;
+  const walk = (x - startX) * SCROLL_SPEED;
+  slider.scrollLeft = scrollLeft - walk;
 });
 </script>
 <body>
@@ -67,8 +97,8 @@
                 <li><a href="./price.html">PRICE</a></li>
                 <li><a href="command.html">Команда</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="" class="icon_btn"><img src="./free-icon-telegram-15079316.png" alt="" width="40px"></a></li>
-                    <li><a href="" class="icon_btn"><img src="./free-icon-vk-social-network-logo-25684.png" alt="" width="40px"></a></li>
+                    <li><a href="https://t.me/professionalitet_energia" class="icon_btn"><img src="./free-icon-telegram-15079316.png" alt=""  class="icon_size"></a></li>
+                    <li><a href="https://vk.com/gapou_energy" class="icon_btn"><img src="./free-icon-vk-social-network-logo-25684.png" alt="" class="icon_size"></a></li>
                   </ul>
         </nav>
   
@@ -194,7 +224,33 @@
         </div>
       </div>
 
-      
+      <!-- Галерея для адаптации -->
+<div class="adapt_gallery">
+  <div class="works_content_adapt">
+          <h1 class="works_title_adapt">Наши работы</h1>
+        </div>
+    <ul class="gallery2">
+  <li style="background-image: url(Adapt1.svg);"></li>
+	<li style="background-image: url(Adapt2.svg);"></li>
+	<li style="background-image: url(Adapt3.svg);"></li>
+	<li style="background-image: url(Adapt4.svg);"></li>
+	<li style="background-image: url(Adapt5.svg);"></li>
+</ul>
+</div>
+<div class="adapt_gallery2">
+  <div class="works_content_adapt">
+          <h1 class="works_title_adapt">Наши работы</h1>
+        </div>
+    <ul class="gallery2">
+  <li style="background-image: url(adapt-pl1.svg);"></li>
+	<li style="background-image: url(Adapt-pl2.svg);"></li>
+	<li style="background-image: url(Adapt-pl3.svg);"></li>
+	<li style="background-image: url(Adapt-pl4.svg);"></li>
+	<li style="background-image: url(Adapt-pl5.svg);"></li>
+</ul>
+</div>
+
+
       <div class="works">
       
         <div class="works_content">
@@ -275,8 +331,13 @@ and `<div class="testimonial-text">`. -->
     
  </div>
 
-<div class="line-btnn "><div class="prd"><span class="otod bx2 line-btn-two">Оставить отзыв</span></div> 
-
+<div class="line-btnn ">
+  <div class="prd"><a href="#win2"><span class="otod bx2 line-btn-two">Оставить отзыв</span></a></div> 
+  <a href="#x" class="overlay" id="win2"></a>
+  
+ <div class="popup-2">
+<script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/u/66558ad0d0468802919b5dcf/?iframe=1" frameborder="0" name="ya-form-66558ad0d0468802919b5dcf" width="650"></iframe>
+                <a class="close"title="Закрыть" href="#close"></a>
 </div></div>
 
 
