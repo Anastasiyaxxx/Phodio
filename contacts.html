@@ -11,6 +11,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet">
+      <link rel="icon" href="Icon.svg" type="image/x-icon">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
@@ -18,8 +19,27 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
     <title>Phodio-студия видео и фото</title>
+      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <script src="//code.jivo.ru/widget/cD43mRdk3U" async></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const burgerCheckbox = document.querySelector('.burger-checkbox');
+  const nav = document.querySelector('.nav');
+  const body = document.querySelector('html', 'body');
+
+  burgerCheckbox.addEventListener('change', function() {
+    if (this.checked) {
+      // Блокировка скролла при появлении бургер меню
+      body.style.overflow = 'hidden';
+      html.style.overflow = 'hidden';
+    } else {
+      // Возвращение скролла при закрытии бургер меню
+      body.style.overflow = 'auto';
+    }
+  });
+});
+</script>
 <body>
    <!--Header  -->
    <div class="container">
@@ -47,8 +67,8 @@
                 <li><a href="./price.html">PRICE</a></li>
                 <li><a href="command.html">Команда</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="" class="icon_btn"><img src="./free-icon-telegram-15079316.png" alt="" width="40px"></a></li>
-                    <li><a href="" class="icon_btn"><img src="./free-icon-vk-social-network-logo-25684.png" alt="" width="40px"></a></li>
+                    <li><a href="https://t.me/professionalitet_energia" class="icon_btn"><img src="./free-icon-telegram-15079316.png" alt=""  class="icon_size"></a></li>
+                    <li><a href="https://vk.com/gapou_energy" class="icon_btn"><img src="./free-icon-vk-social-network-logo-25684.png" alt="" class="icon_size"></a></li>
                   </ul>
         </nav>
   
