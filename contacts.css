@@ -140,7 +140,7 @@ width: 420px;
 }
 .maps_img1 {
     position: absolute;
-    display: flex;
+    display: none;
     width: 140px;
     margin-left: 131px;
     border-radius: 50%;
@@ -165,7 +165,7 @@ width: 420px;
 }
 .maps_img2 {
     position: absolute;
-    display: flex;
+    display: none;
     width: 173px;
     margin-left: 622px;
     margin-top: 604px;
@@ -173,7 +173,7 @@ width: 420px;
 }
 .maps_img1 {
     position: absolute;
-    display: flex;
+    display: none;
     width: 197px;
     margin-left: 57px;
     border-radius: 50%;
@@ -191,14 +191,14 @@ width: 420px;
 }
 .maps_img1 {
     position: absolute;
-    display: flex;
+    display: none;
     width: 202px;
     margin-left: 100px;
     border-radius: 50%;
 }
 .maps_img2 {
     position: absolute;
-    display: flex;
+    display: none;
     width: 190px;
     margin-left: 779px;
     margin-top: 518px;
